@@ -1,7 +1,7 @@
 ---
 layout: default
-title: kHeavyHash Miner Comparison
-nav_order: 2
+title: Miner Comparison
+nav_order: 3
 ---
 
 # @todo

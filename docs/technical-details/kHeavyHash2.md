@@ -1,7 +1,7 @@
 ---
 layout: default
-title: kHeavyHash: A Technical Overview
-nav_order: 1
+title: kHeavyHash: A Technical Overview @todo
+nav_order: 2
 ---
 
 # A Technical Overview of the kHeavyHash Proof-of-Work Algorithm
