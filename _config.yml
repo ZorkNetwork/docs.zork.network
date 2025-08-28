@@ -1,4 +1,4 @@
-title: Zork.Network Documenation
+title: Zork Network Documenation
 description: Developer documentation for the Zork Network.
 
 # Development server config, needed to load some of the content
@@ -15,3 +15,6 @@ sticky_navigation: true
 prev_next_buttons_location: both
 search_enabled: true
 hljs_style: github-gist
+
+exclude:
+  - assets/
