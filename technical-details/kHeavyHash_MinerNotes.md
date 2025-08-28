@@ -1,14 +1,18 @@
 ---
 layout: default
-title: Miner Stratum Notes
+title: kHeavyHash Miner Stratum Protocol(s)
 nav_order: 4
 ---
 
+# kHeavyHash Miner Stratum Protocol(s)
+
 Here’s a detailed breakdown of how to **feed work to kHeavyHash miners** and **submit results**, based on Stratum-like protocols used by most ASIC devices:
 
----
-
 Here’s a deep dive backed by actual vendor documentation showing how **kHeavyHash ASIC miners** implement the Stratum JSON‑RPC interface—not just assumptions:
+
+```{note}
+This is a work in progress.  This note will be removed after a proofreading.  Feel free to contribute by asking questions where further clarification is required, or by providing constructive feedback.
+```
 
 ---
 
@@ -71,26 +75,9 @@ These miners follow **Stratum V1 (JSON‑RPC 2.0)**, documented by Stratum proto
 * Supports methods: `mining.subscribe`, `get_extranonce.subscribe`, `mining.authorize`, `mining.submit`, and server push `mining.notify`, etc.
   {CITATION\_START}cite{CITATION\_DELIMITER}turn0search5{CITATION\_DELIMITER}turn0search17{CITATION\_STOP}
 
+
 ---
 
-## ✅ Conclusion
-
-These specifics are **not assumptions**:
-
-* The **IceRiver manual** provides exact JSON-RPC examples and nonce handling rules.
-* **Bitmain documentation** confirms use of standard Stratum protocol methods.
-* All content aligns with published Stratum standards.
-
-### ✅ So yes, we have concrete documentation—not just assumptions.
-
-Would you like:
-
-* A full annotated JSON exchange example?
-* A script you can use to test with your miner’s IP?
-* Help setting up a local Stratum proxy to see this in action?
-
-
-------------------------------------------------------------------------------------------------------------------------
 
 ## ⚙️ Stratum Protocol for kHeavyHash Miners
 
