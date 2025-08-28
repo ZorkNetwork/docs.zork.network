@@ -7,7 +7,7 @@ webrick:
     Access-Control-Allow-Origin: "*"
 
 # Theme settings
-site_author: ADGL Enterprises, LLC.
+site_author: Zork Network Developers
 repo_url: 'https://github.com/ZorkNetwork/docs.zork.network'
 edit_on_github: true
 github_docs_folder: false
