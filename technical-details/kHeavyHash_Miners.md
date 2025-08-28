@@ -1,6 +1,6 @@
 ---
 layout: default
-title: kHeavyHash Miner Comparison
+title: kHeavyHash Miners
 nav_order: 3
 ---
 
