@@ -1,5 +1,5 @@
-title: Read The Docs Jekyll Theme
-description: Port of the Read the Docs theme to Jekyll to use with GitHub Pages.
+title: Zork.Network Documenation
+description: Developer documentation for the Zork Network.
 
 # Development server config, needed to load some of the content
 webrick:
@@ -7,8 +7,8 @@ webrick:
     Access-Control-Allow-Origin: "*"
 
 # Theme settings
-site_author: Carlos Pereira Atencio
-repo_url: 'https://github.com/carlosperate/jekyll-theme-rtd'
+site_author: ADGL Enterprises, LLC.
+repo_url: 'https://github.com/ZorkNetwork/docs.zork.network'
 edit_on_github: true
 github_docs_folder: false
 sticky_navigation: true
