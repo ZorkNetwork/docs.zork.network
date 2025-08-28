@@ -1,10 +1,10 @@
 ---
 layout: default
-title: kHeavyHash Miner Stratum Protocol(s)
+title: kHeavyHash Stratum Protocols
 nav_order: 4
 ---
 
-# kHeavyHash Miner Stratum Protocol(s)
+# kHeavyHash Stratum Protocols
 
 Here’s a detailed breakdown of how to **feed work to kHeavyHash miners** and **submit results**, based on Stratum-like protocols used by most ASIC devices:
 
