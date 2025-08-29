@@ -7,7 +7,7 @@ nav_order: 100
 # Zorkcoin Addressing & Signing
 
 @todo
-# Overview
+## Overview
 
 Addressing is basically the same as Bitcoin and Litecoin other than the
 identifiers being changed to indicate Zorkcoin to avoid 'reuse'.
