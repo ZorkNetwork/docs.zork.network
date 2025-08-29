@@ -144,10 +144,12 @@ It retains the indifferentiability properties of KECCAK while enabling use-case 
 ------------------------------------------------------------------------------------------------------------------------
 
 
-# A Technical Overview of the kHeavyHash Proof-of-Work Algorithm
+## @todo
+
 
 ```{note}
-This is a work in progress.  This note will be removed after a proofreading.  Feel free to contribute by asking questions where further clarification is required, or by providing constructive feedback.
+This is a work in progress.  This sections information still
+being integrated into this document.
 ```
 
 ## Abstract

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Zorkcoin Addressing & Signing
-nav_order: 1
+nav_order: 100
 ---
 
 # Zorkcoin Addressing & Signing
