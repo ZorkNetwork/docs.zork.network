@@ -1,4 +1,4 @@
-# Zork Network Documentation Site
+# Zork Network™ Documentation Site
 
 ## Development Notes
 

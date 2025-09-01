@@ -4,7 +4,7 @@ title: Home of
 nav_exclude: true
 ---
 
-# Zork Network Documentation Site
+# Zork Network™ Documentation Site
 
 @todo a lot yet to do, but throwing this out there for now to start logging 
 some notes and todo items.

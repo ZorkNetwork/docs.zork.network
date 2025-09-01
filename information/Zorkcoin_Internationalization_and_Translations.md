@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Zorkcoin Internationalization
+title: Zorkcoin™ Internationalization
 nav_order: 100
 ---
 
-# Zorkcoin Internationalization
+# Zorkcoin™ Internationalization
 
 This document is still in progress!
 

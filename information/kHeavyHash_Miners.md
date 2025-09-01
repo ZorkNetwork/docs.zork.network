@@ -93,7 +93,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 
 ---
 
-# 📋 kHeavyHash Miner Comparison Summary Table
+## 📋 kHeavyHash Miner Comparison Summary Table
 
 This table lists current known manufacturers and models of ASIC miners built to support the **kHeavyHash** algorithm (used primarily in **Kaspa** mining). It includes specifications such as release info, MSRP, hash efficiency, and estimated pricing.
 
