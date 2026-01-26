@@ -1,0 +1,37 @@
+{
+	"name": "Jekyll GitHub Pages",
+	"image": "mcr.microsoft.com/devcontainers/ruby:2.7",
+	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {},
+	
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [4000],
+	
+	// Use 'portsAttributes' to set default properties for specific forwarded ports.
+	"portsAttributes": {
+		"4000": {
+			"label": "Jekyll Server",
+			"onAutoForward": "notify"
+		}
+	},
+	
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// This will install dependencies and then start the Jekyll dev server with
+	// watch and polling enabled so the docs site is available automatically.
+	"postCreateCommand": "git config --global --add safe.directory '*' && gem install bundler -v 2.4.22 && bundle install && jekyll serve --host localhost --watch --force_polling",
+	
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rebornix.Ruby",
+				"castwide.solargraph"
+			]
+		}
+	},
+	
+	// Comment out to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "vscode"
+}
+
