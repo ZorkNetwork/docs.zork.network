@@ -8,8 +8,8 @@ plugins:
 
 # Local development URLs (override in production if needed)
 # Use localhost so links work correctly when running inside a container.
-url: "http://localhost:4000"
-baseurl: ""
+#url: "http://localhost:4000"
+#baseurl: ""
 
 # Development server config, needed to load some of the content
 #webrick:
