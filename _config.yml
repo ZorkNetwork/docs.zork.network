@@ -3,8 +3,8 @@ description: Developer documentation for the Zork Network™.
 remote_theme: carlosperate/jekyll-theme-rtd@main
 
 # Plugins
-plugins:
-  - jekyll-remote-theme
+#lugins:
+# - jekyll-remote-theme
 
 # Local development URLs (override in production if needed)
 # Use localhost so links work correctly when running inside a container.
