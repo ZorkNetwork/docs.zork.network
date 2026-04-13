@@ -1,6 +1,6 @@
 title: Zork Network™ Documenation
 description: Developer documentation for the Zork Network™.
-remote_theme: carlosperate/jekyll-theme-rtd
+remote_theme: carlosperate/jekyll-theme-rtd@main
 
 # Plugins
 plugins:

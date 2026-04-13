@@ -282,7 +282,7 @@ WindMiners once offered kHeavyHash ASICs (e.g. the K9); at the time of writing, 
 
 ## 📋 kHeavyHash Miner Comparison Summary Table
 
-This table lists current known manufacturers and models of ASIC miners built to support the **kHeavyHash** algorithm (used primarily in **Kaspa** mining). It includes specifications such as hashrate, power consumption, and efficiency.
+This table lists current known manufacturers and models of ASIC miners built to support the **kHeavyHash** algorithm. It includes specifications such as hashrate, power consumption, and efficiency.
 
 
 | Manufacturer | Model        | Hashrate     | Power     | Efficiency (H/W) | Efficiency (J/GH) |
