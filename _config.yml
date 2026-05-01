@@ -27,5 +27,108 @@ search_enabled: true
 hljs_style: github-gist
 google_analytics: G-FZN9KEJR6Y
 
+# Locale folders: sets page.lang for translated trees (GitHub Pages–friendly static paths).
+defaults:
+  - scope:
+      path: "es"
+    values:
+      lang: "es"
+  - scope:
+      path: "fr"
+    values:
+      lang: "fr"
+  - scope:
+      path: "de"
+    values:
+      lang: "de"
+  - scope:
+      path: "it"
+    values:
+      lang: "it"
+  - scope:
+      path: "pt"
+    values:
+      lang: "pt"
+  - scope:
+      path: "ru"
+    values:
+      lang: "ru"
+  - scope:
+      path: "zh-hans"
+    values:
+      lang: "zh-hans"
+  - scope:
+      path: "zh-hant"
+    values:
+      lang: "zh-hant"
+  - scope:
+      path: "ja"
+    values:
+      lang: "ja"
+  - scope:
+      path: "ko"
+    values:
+      lang: "ko"
+  - scope:
+      path: "vi"
+    values:
+      lang: "vi"
+  - scope:
+      path: "fil"
+    values:
+      lang: "fil"
+  - scope:
+      path: "uk"
+    values:
+      lang: "uk"
+  - scope:
+      path: "cs"
+    values:
+      lang: "cs"
+  - scope:
+      path: "hi"
+    values:
+      lang: "hi"
+  - scope:
+      path: "ur"
+    values:
+      lang: "ur"
+  - scope:
+      path: "id"
+    values:
+      lang: "id"
+  - scope:
+      path: "ar"
+    values:
+      lang: "ar"
+  - scope:
+      path: "ms"
+    values:
+      lang: "ms"
+  - scope:
+      path: "ta"
+    values:
+      lang: "ta"
+  - scope:
+      path: "he"
+    values:
+      lang: "he"
+  - scope:
+      path: "tr"
+    values:
+      lang: "tr"
+  - scope:
+      path: "th"
+    values:
+      lang: "th"
+  - scope:
+      path: "fa"
+    values:
+      lang: "fa"
+  - scope:
+      path: "bn"
+    values:
+      lang: "bn"
+
 #exclude:
 #  - assets/

@@ -21,7 +21,17 @@
 
 {%- comment %} First loop to print pages without categories and collect an array of categories {%- endcomment %}
 {%- for nav_item in nav %}
-    {%- if nav_item.hide != true and nav_item.nav_exclude != true %}
+    {%- assign ni_lang = nav_item.lang -%}
+    {%- if ni_lang == nil or ni_lang == '' -%}
+      {%- assign ni_lang = 'en' -%}
+      {%- assign _ni_first = nav_item.path | split: '/' | first -%}
+      {%- for l in site.data.languages -%}
+        {%- if l.slug != 'en' and _ni_first == l.slug -%}
+          {%- assign ni_lang = l.slug -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- if nav_item.hide != true and nav_item.nav_exclude != true and ni_lang == current_lang %}
         {%- assign path_array = nav_item.dir | split: "/" %}
         {%- assign array_size = path_array | size %}
         {%- if array_size == 0 %}
@@ -44,7 +54,13 @@
                 {% endif %}
             {%- endif %}
         {%- else %}
-            {%- assign sections = sections | append: path_array[1] | append: "|" %}
+            {%- assign section_root = path_array[1] %}
+            {%- for l in site.data.languages %}
+                {%- if l.slug != 'en' and section_root == l.slug and path_array.size >= 3 and path_array[2] != '' %}
+                    {%- assign section_root = path_array[2] %}
+                {%- endif %}
+            {%- endfor %}
+            {%- assign sections = sections | append: section_root | append: "|" %}
         {%- endif %}
     {%- endif %}
 {%- endfor %}
@@ -53,9 +69,24 @@
 {%- for section in sections %}
     <p class="caption"><span class="caption-text">{{ section }}</span></p>
     {%- for nav_item in nav %}
+        {%- assign ni_lang = nav_item.lang -%}
+        {%- if ni_lang == nil or ni_lang == '' -%}
+          {%- assign ni_lang = 'en' -%}
+          {%- assign _ni_first = nav_item.path | split: '/' | first -%}
+          {%- for l in site.data.languages -%}
+            {%- if l.slug != 'en' and _ni_first == l.slug -%}
+              {%- assign ni_lang = l.slug -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
         {%- assign path_array = nav_item.dir | split: "/" %}
         {%- assign page_section = path_array[1] %}
-        {%- if page_section == section and nav_item.hide != true and nav_item.nav_exclude != true %}
+        {%- for l in site.data.languages %}
+            {%- if l.slug != 'en' and page_section == l.slug and path_array.size >= 3 and path_array[2] != '' %}
+                {%- assign page_section = path_array[2] %}
+            {%- endif %}
+        {%- endfor %}
+        {%- if page_section == section and nav_item.hide != true and nav_item.nav_exclude != true and ni_lang == current_lang %}
             {%- if nav_item.url == page.url %}
                 {%- include toc.html html=content sanitize=true h_max=4 item_class="toctree-l%level%" %} 
                 {%- if nav_item.url == page.url %}

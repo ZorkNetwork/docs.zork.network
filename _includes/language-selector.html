@@ -1,0 +1,36 @@
+{%- assign trans_path = page.translation_path -%}
+{%- if trans_path == nil or trans_path == '' -%}
+  {%- assign pth = page.path -%}
+  {%- if current_lang != 'en' -%}
+    {%- assign locale_prefix = current_lang | append: '/' -%}
+    {%- assign pth = pth | remove_first: locale_prefix -%}
+  {%- endif -%}
+  {%- if pth contains '.md' -%}
+    {%- assign trans_path = pth | replace: '.md', '.html' -%}
+  {%- else -%}
+    {%- assign trans_path = pth -%}
+  {%- endif -%}
+{%- endif -%}
+<div class="lang-selector-wrap">
+  <label class="lang-selector-label" for="site-lang-select">Language</label>
+  <select id="site-lang-select" class="lang-selector" autocomplete="off">
+    {%- for lang in site.data.languages -%}
+      {%- if lang.slug == 'en' -%}
+        {%- capture lang_href -%}/{{ trans_path }}{%- endcapture -%}
+      {%- else -%}
+        {%- capture lang_href -%}/{{ lang.slug }}/{{ trans_path }}{%- endcapture -%}
+      {%- endif -%}
+      <option value="{{ lang_href | relative_url }}" {% if current_lang == lang.slug %}selected="selected"{% endif %}>{{ lang.native_label }}</option>
+    {%- endfor -%}
+  </select>
+</div>
+<script>
+(function() {
+  var sel = document.getElementById('site-lang-select');
+  if (!sel) return;
+  sel.addEventListener('change', function() {
+    var v = this.value;
+    if (v) window.location.href = v;
+  });
+})();
+</script>

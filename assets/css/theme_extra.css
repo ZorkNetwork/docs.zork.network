@@ -73,6 +73,32 @@ pre .cs, pre .c {
  * Additions specific to the search functionality provided by MkDocs
  */
 
+/* Language selector (GitHub Pages locale paths) */
+.lang-selector-wrap {
+    margin-top: 12px;
+    padding: 0 12px 12px;
+}
+.lang-selector-label {
+    display: block;
+    font-size: 11px;
+    color: #b3b3b3;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.lang-selector {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    font-size: 13px;
+    line-height: 1.3;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fcfcfc;
+    color: #404040;
+}
+
 .search-results {
     margin-top: 23px;
 }

@@ -1,6 +1,15 @@
+{% include i18n_resolve_lang.html %}
+{%- assign html_lang = 'en' -%}
+{%- assign html_dir = 'ltr' -%}
+{%- for l in site.data.languages -%}
+  {%- if l.slug == current_lang -%}
+    {%- assign html_lang = l.html_lang -%}
+    {%- assign html_dir = l.dir | default: 'ltr' -%}
+  {%- endif -%}
+{%- endfor -%}
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="{{ html_lang }}" dir="{{ html_dir }}"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ html_lang }}" dir="{{ html_dir }}"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,6 +50,7 @@
             <a href="{{ site.url | absolute_url }}{{ site.github.baseurl }}" class="icon icon-home"> {{ site.title }}</a>
           {%- endif %}
           {% unless site.search_enabled == false %}{% include searchbox.html %}{% endunless %}
+          {% include language-selector.html %}
         </div>
 
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">

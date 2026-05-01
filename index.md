@@ -2,6 +2,7 @@
 layout: default
 title: Home of
 nav_exclude: true
+lang: en
 ---
 
 # Zork Network™ Documentation Site

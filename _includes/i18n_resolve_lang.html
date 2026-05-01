@@ -1,0 +1,11 @@
+{%- assign current_lang = page.lang -%}
+{%- if current_lang == nil or current_lang == '' -%}
+  {%- assign current_lang = 'en' -%}
+  {%- assign path_parts = page.path | split: '/' -%}
+  {%- assign maybe_locale = path_parts[0] -%}
+  {%- for l in site.data.languages -%}
+    {%- if l.slug != 'en' and maybe_locale == l.slug -%}
+      {%- assign current_lang = l.slug -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
