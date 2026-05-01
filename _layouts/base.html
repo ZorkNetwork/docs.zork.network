@@ -93,10 +93,18 @@
   <script src="{{ 'assets/js/modernizr-2.8.3.min.js' | absolute_url }}" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script src="{{ 'assets/js/theme.js' | absolute_url }}" defer></script>
+  {%- unless site.admonitions == false %}
+  <script src="https://unpkg.com/adomonitions/dist/adomonitions.umd.min.js" defer></script>
+  {%- endunless %}
   <script type="text/javascript" defer>
     hljs.initHighlightingOnLoad();
     window.addEventListener('load', function() {
       SphinxRtdTheme.Navigation.enable({{ site.sticky_navigation | default: 'false' }});
+      {%- unless site.admonitions == false %}
+      if (window.adomonitions && typeof window.adomonitions.init === 'function') {
+        window.adomonitions.init();
+      }
+      {%- endunless %}
     });
   </script>
   {%- if page.mathjax %}{% include mathjax.html %}{% endif %}

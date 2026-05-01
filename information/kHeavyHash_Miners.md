@@ -315,7 +315,7 @@ GPU and CPU mining with BZMiner, GMiner, lolMiner, and similar software predates
 This table lists **kHeavyHash ASIC miners** (TH/s–class) and **legacy GPU/CPU** hardware (MH/s–class) from the sections above. Each row states hashrate, power, and both efficiency columns **with units in the cell** so mixed scales are clear. For legacy rows, **efficiency (H/W)** is MH/W (hashrate in MH/s ÷ power in W); **J/GH** is power in watts ÷ hashrate in GH/s (equivalently 1000 × W ÷ MH/s). Where both hashrate and power are ranges, the efficiency columns span the **best and worst** combinations (maximum hashrate ÷ minimum power for the upper MH/W bound, and the reciprocal logic for J/GH).
 
 
-| Manufacturer   | Model          | Hashrate      | Power      | Efficiency       | Efficiency        |
+| Manufacturer   | Model          | Hashrate      | Power      | Efficiency Hashes/Watt | Efficiency Joules/GigaHash|
 | -------------- | -------------- | ------------- | ---------- | ---------------- | ----------------- |
 | **Bitmain**    | KS7            | 36–40 TH/s    | 2.8–3.1 kW | 13.0 GH/W        | 0.077 J/GH        |
 |                | KS5 Pro        | 21 TH/s       | 3.2 kW     | 6.67 GH/W        | 0.15 J/GH         |
@@ -396,5 +396,5 @@ This table lists **kHeavyHash ASIC miners** (TH/s–class) and **legacy GPU/CPU*
 |                | i7-8700        | 6.6 MH/s      | 65 W       | 0.10 MH/W        | 9848 J/GH         |
 | **ARM CPU**    | Cortex-A53 x4  | 1 MH/s        | 15 W       | 0.07 MH/W        | 15000 J/GH        |
 
-> **Note:** Efficiency = hashrate ÷ power (for example GH/W). Higher is better. J/GH = joules per 
-gigahash (power ÷ hashrate in GH/s).
+> [!NOTE]
+> Efficiency is shown in two formats.  The first is **Hashes Per Watt** which is the number of hashes that occur for each watt of power. *Higher is better*, i.e. More hashes for a watt of power. The second is **Joules Per Gigahash** which is the number of joules conssumed for 1 billion hashes to occur. *Lower is better*, i.e. Less energy for a gigahash.
