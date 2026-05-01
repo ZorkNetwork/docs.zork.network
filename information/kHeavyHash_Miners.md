@@ -316,27 +316,14 @@ Summary from [Raspberry Pi product documentation](https://www.raspberrypi.com/do
 
 | Model                        | SoC       | CPU                           | GPU           | PCIe    |
 | ---------------------------- | --------- | ----------------------------- | ------------- | ------- |
-| Raspberry Pi 5               | BCM2712   | Cortex‑A76 x4                 | VideoCore VII | Gen3 x1 |
-| Raspberry Pi 500 (+)         | BCM2712   | Cortex‑A76 x4                 | VideoCore VII | Gen3 x1 |
-| Raspberry Pi 400             | BCM2711   | Cortex‑A72 x4                 | VideoCore VI  |   --    |
-| Raspberry Pi 4 Model B       | BCM2711   | Cortex‑A72 x4                 | VideoCore VI  |   --    |
 | Raspberry Pi 3 Model B+      | BCM2837B0 | Cortex‑A53 x4                 | VideoCore IV  |   --    |
 | Raspberry Pi 3 Model B       | BCM2837   | Cortex‑A53 x4                 | VideoCore IV  |   --    |
 | Raspberry Pi 3 Model A+      | BCM2837   | Cortex‑A53 x4                 | VideoCore IV  |   --    |
-| Raspberry Pi 2 Model B Rev y | BCM2836   | Cortex‑A7 x4                  | VideoCore IV  |   --    |
 | Raspberry Pi 2 Model B Rev x | BCM2837   | Cortex‑A53 x4                 | VideoCore IV  |   --    |
-| Raspberry Pi 1 Model B+      | BCM2835   | ARM1176JZF‑S x1               | VideoCore IV  |   --    |
-| Raspberry Pi 1 Model A+      | BCM2835   | ARM1176JZF‑S x1               | VideoCore IV  |   --    |
 | Raspberry Pi Zero 2 W        | BCM2710A1 | Cortex‑A53 x4                 | VideoCore IV  |   --    |
-| Raspberry Pi Zero (W)        | BCM2835   | ARM1176JZF‑S x1               | VideoCore IV  |   --    |
-| Compute Module 5             | BCM2712   | Cortex‑A76 x4                 | VideoCore VII | Gen3 x1 |
-| Compute Module 4 / CM4S      | BCM2711   | Cortex‑A72 x4                 | VideoCore VI  | Gen2 x1 |
 | Compute Module 3+            | BCM2837B0 | Cortex‑A53 x4                 | VideoCore IV  |   --    |
 | Compute Module 3             | BCM2837   | Cortex‑A53 x4                 | VideoCore IV  |   --    |
-| Compute Module 1             | BCM2835   | ARM1176JZF‑S x1               | VideoCore IV  |   --    |
 | Compute Module Zero          | BCM2710A1 | Cortex‑A53 x4                 | VideoCore IV  |   --    |
-| Raspberry Pi Pico 2          | RP2350    | Cortex‑M33 x2,<br> RISC-V Hazard3 | —         |   --    |
-| Raspberry Pi Pico (series)   | RP2040    | Cortex‑M0+ x2                 | —             |   --    |
 
 
 #### Orange Pi Computers
@@ -347,56 +334,15 @@ Boards listed under Orange Pi’s [computer and microcontroller details index](h
 | ----------------------- | ------- | ----------------------------- | --------------------- | ----------------- |
 | Orange Pi 2G IoT        | H6      | Cortex‑A53 x4                 | Mali‑T720 MP2         |   --              |
 | Orange Pi 3             | H6      | Cortex‑A53 x4                 | Mali‑T720 MP2         | Gen2 x1           |
-| Orange Pi 3B            | RK3566  | Cortex‑A55 x4                 | Mali‑G52 2EE          | Gen3 x1           |
-| Orange Pi 3G IoT A      | —       | —                             | —                     | Unknown           |
-| Orange Pi 3G IoT B      | —       | Cortex‑A7 x4                  | Mali‑400 MP2          |   --              |
-| Orange Pi 4             | RK3399  | Cortex‑A72 x2 + <br>Cortex‑A53 x4 | Mali‑T864 MP4     | Gen2 x4           |
-| Orange Pi 4 Pro         | A733    | Cortex‑A76 x2 + <br>Cortex‑A55 x6 | IMG BXM           | Gen3 x1           |
-| Orange Pi 4 Ultra       | RK3576  | Cortex‑A72 x4 + <br>Cortex‑A53 x4 | Mali‑G52 MC3      | Gen2 x1           |
-| Orange Pi 4A            | T527    | Cortex‑A55 x8                 | Mali‑G57 MC1          | Gen2 x1           |
-| Orange Pi 4G IoT        | —       | —                             | Mali‑T720             |   --              |
-| Orange Pi 5             | RK3588S | Cortex‑A76 x4 + <br>Cortex‑A55 x4 | Mali‑G610 MP4     | Gen3 x4           |
-| Orange Pi 5 32GB        | RK3588S | Cortex‑A76 x4 + <br>Cortex‑A55 x4 | Mali‑G610 MP4     | Gen3 x4           |
-| Orange Pi 5 Max         | RK3588  | Cortex‑A76 x4 + <br>Cortex‑A55 x4 | Mali‑G610 MP4     | Gen3 x4           |
-| Orange Pi 5 Pro         | RK3588S | Cortex‑A76 x4 + <br>Cortex‑A55 x4 | Mali‑G610 MP4     | Gen3 x4 (typical) |
-| Orange Pi 5 Ultra       | RK3588  | Cortex‑A76 x4 + <br>Cortex‑A55 x4 | Mali‑G610 MP4     | Gen3 x4           |
-| Orange Pi 5 Wi‑Fi 6     | —       | —                             | —                     | Unknown           |
-| Orange Pi 5 Plus        | RK3588  | Cortex‑A76 x4 + <br>Cortex‑A55 x4 | Mali‑G610 MP4     | Gen3 x4           |
-| Orange Pi 5 Plus 32GB   | RK3588  | Cortex‑A76 x4 + <br>Cortex‑A55 x4 | Mali‑G610 MP4     | Gen3 x4 (typical) |
-| Orange Pi 5B            | RK3588S | Cortex‑A76 x4 + <br>Cortex‑A55 x4 | Mali‑G610 MP4     | Gen3 x4           |
-| Orange Pi 5B 32GB       | RK3588S | Cortex‑A76 x4 + <br>Cortex‑A55 x4 | Mali‑G610 MP4     | Gen3 x4           |
-| Orange Pi 6 Plus        | —       | —                             | —                     | Gen4 x4           |
-| Orange Pi AIpro (20T)   | —       | —                             | —                     | Gen3 x4           |
-| Orange Pi AIpro (8–12T) | —       | —                             | —                     | Gen3 x4           |
-| Orange Pi CM4 v1        | RK3566  | Cortex‑A55 x4                 | Mali‑G52 2EE          | Gen3 x1 (carrier) |
-| Orange Pi CM4 v2        | —       | —                             | —                     | Gen2 x1           |
-| Orange Pi CM5           | RK3588S | Cortex‑A76 x4 + <br>Cortex‑A55 x4 | Mali‑G610 MP4     | Gen3 x4           |
-| Orange Pi I96           | —       | —                             | —                     |   --              |
-| Orange Pi Lite          | H3      | Cortex‑A7 x4                  | Mali‑400 MP2          |   --              |
 | Orange Pi Lite 2        | H6      | Cortex‑A53 x4                 | Mali‑T720 MP2         |   --              |
-| Orange Pi O1            | —       | —                             | —                     | Gen3 x4           |
-| Orange Pi One           | H3      | Cortex‑A7 x4                  | Mali‑400 MP2          |   --              |
 | Orange Pi One +         | H6      | Cortex‑A53 x4                 | Mali‑T720 MP2         |   --              |
-| Orange Pi PC            | H3      | Cortex‑A7 x4                  | Mali‑400 MP2          |   --              |
 | Orange Pi PC 2          | H5      | Cortex‑A53 x4                 | Mali‑450 MP4          |   --              |
-| Orange Pi PC +          | H3      | Cortex‑A7 x4                  | Mali‑400 MP2          |   --              |
-| Orange Pi + 2E          | H3      | Cortex‑A7 x4                  | Mali‑400 MP2          |   --              |
 | Orange Pi Prime         | H5      | Cortex‑A53 x4                 | Mali‑450 MP4          |   --              |
-| Orange Pi R1            | H2      | Cortex‑A7 x4                  | Mali‑400 MP2          |   --              |
-| Orange Pi R2S           | —       | —                             | —                     |   --              |
-| Orange Pi R6            | —       | —                             | —                     | Unknown           |
-| Orange Pi RK3399        | RK3399  | Cortex‑A72 x2 + <br>Cortex‑A53 x4 | Mali‑T860 MP4     | Gen2 x4           |
-| Orange Pi RV            | JH7110  | SiFive U74 x4                 | —                     | Gen2 x1           |
 | Orange Pi RV2           | Ky X1   | RV64GCVB x8 (RVA22)           | IMG BXE-2-32          | Gen2 x2           |
 | Orange Pi Win +         | A64     | Cortex‑A53 x4                 | Mali‑400 MP2          |   --              |
-| Orange Pi Zero          | H2      | Cortex‑A7 x4                  | Mali‑400 MP2          |   --              |
 | Orange Pi Zero 2        | H6      | Cortex‑A53 x4                 | Mali‑T720 MP2         |   --              |
 | Orange Pi Zero 2W       | H618    | Cortex‑A53 x4                 | Mali‑G31 MP2          |   --              |
 | Orange Pi Zero 3        | H618    | Cortex‑A53 x4                 | Mali‑G31 MP2          |   --              |
-| Orange Pi Zero 3W       | A733    | Cortex‑A76 x2 + <br>Cortex‑A55 x6 | IMG BXM‑8‑256     | Gen3 x1           |
-| Orange Pi Zero LTS      | H3      | Cortex‑A7 x4                  | Mali‑400 MP2          |   --              |
-| Orange Pi Zero +        | H2      | Cortex‑A7 x4                  | Mali‑400 MP2          |   --              |
-| Orange Pi Zero + 2      | H3      | Cortex‑A7 x4                  | Mali‑400 MP2          |   --              |
 
 ---
 
