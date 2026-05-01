@@ -8,7 +8,7 @@ zork_per_day_last_updated: "25JAN26"
 
 # kHeavyHash Miners
 
-> ⚠️ **DYOR Disclaimer:** Do Your Own Research. The information presented here was believed to be accurate at the time of creation, but specifications, pricing, and availability can change rapidly. Always verify current information directly with manufacturers and reputable vendors before making purchasing decisions. If you find any information that is incorrect, missing, or out of date, please [open a GitHub issue](https://github.com/ZorkNetwork/docs.zork.network/issues) to help keep this documentation current.
+> **Do your own research (DYOR).** The information presented here was believed to be accurate at the time of creation, but specifications, pricing, and availability can change rapidly. Always verify current information directly with manufacturers and reputable vendors before making purchasing decisions. If you find any information that is incorrect, missing, or out of date, please [open a GitHub issue](https://github.com/ZorkNetwork/docs.zork.network/issues) to help keep this documentation current.
 
 Mining research is quickly dated! This research was last updated July 2025.
 
@@ -25,7 +25,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 2,772 W (36TH) / 3,080 W (40TH)
 * **Efficiency:** 12.99–13.00 GH/W (0.077 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **Antminer KS5 Pro (21 TH/s)**
@@ -35,7 +35,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 3,150 W
 * **Efficiency:** 6.67 GH/W (0.15 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **Antminer KS5 (20 TH/s)**
@@ -45,7 +45,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 3,000 W
 * **Efficiency:** 6.67 GH/W (0.15 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **Antminer KS3 (8.3–9.4 TH/s)**
@@ -55,7 +55,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 3,188 W or 3,500 W
 * **Efficiency:** 2.60–2.69 GH/W (0.37–0.38 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ---
@@ -71,7 +71,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 3,500 W
 * **Efficiency:** 8.57 GH/W (0.117 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS7 Lite (4.2 TH/s)**
@@ -81,7 +81,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 500 W
 * **Efficiency:** 8.40 GH/W (0.119 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS2 Lite (2 TH/s)**
@@ -91,7 +91,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 500 W
 * **Efficiency:** 4.00 GH/W (0.25 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS0 Ultra (400 GH/s)**
@@ -101,7 +101,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 100 W
 * **Efficiency:** 4.00 GH/W (0.25 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS5M (15 TH/s)**
@@ -111,7 +111,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 3,400 W (±10%)
 * **Efficiency:** ~4.41 GH/W (~0.227 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS5L (12 TH/s)**
@@ -121,7 +121,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** ~2,400 W
 * **Efficiency:** 5.00 GH/W (0.20 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS3 (8 TH/s)**
@@ -131,7 +131,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 3,200 W
 * **Efficiency:** 2.50 GH/W (0.40 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS3M (6 TH/s)**
@@ -141,7 +141,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 3,400 W
 * **Efficiency:** ~1.76 GH/W (~0.57 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS2 (2 TH/s)**
@@ -151,7 +151,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 1,200 W
 * **Efficiency:** ~1.67 GH/W (0.60 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS1 (1 TH/s)**
@@ -161,7 +161,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 600 W
 * **Efficiency:** ~1.67 GH/W (0.60 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS0 Pro (200 GH/s)**
@@ -171,7 +171,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 100 W
 * **Efficiency:** 2.00 GH/W (0.50 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS0 (100 GH/s)**
@@ -181,7 +181,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 65 W
 * **Efficiency:** ~1.54 GH/W (~0.65 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ---
@@ -197,7 +197,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 1,800 W
 * **Efficiency:** ~3.06 GH/W (~0.33 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KA-BOX Pro (1.6 TH/s)**
@@ -207,7 +207,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 600 W
 * **Efficiency:** ~2.67 GH/W (0.375 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KA BOX (1.18 TH/s)**
@@ -217,7 +217,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 400 W
 * **Efficiency:** 2.95 GH/W (0.34 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ---
@@ -233,7 +233,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 3,600 W
 * **Efficiency:** ~2.92 GH/W (~0.34 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ### **KS6 (10.5–11 TH/s)**
@@ -243,7 +243,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 3,400–3,600 W
 * **Efficiency:** ~3.09 GH/W (~0.32 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ---
@@ -259,7 +259,7 @@ Mining research is quickly dated! This research was last updated July 2025.
 * **Power:** 3,400 W
 * **Efficiency:** ~3.09 GH/W (~0.32 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ---
@@ -275,12 +275,12 @@ WindMiners once offered kHeavyHash ASICs (e.g. the K9); at the time of writing, 
 * **Power:** 3,300 W
 * **Efficiency:** 3.18 GH/W (0.314 J/GH)
 {% if page.network_difficulty > 0 %}
-* **ℤ/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
+* **ZORK/day:** *[To be calculated]* *as of {{ page.zork_per_day_last_updated }}*
 {% endif %}
 
 ---
 
-## 📋 kHeavyHash Miner Comparison Summary Table
+## kHeavyHash miner comparison summary
 
 This table lists current known manufacturers and models of ASIC miners built to support the **kHeavyHash** algorithm. It includes specifications such as hashrate, power consumption, and efficiency.
 
@@ -311,7 +311,7 @@ This table lists current known manufacturers and models of ASIC miners built to 
 | **iBeLink**  | BM-KS Max    | 10.5 TH/s    | 3,400 W   | ~3.09 GH/W       | ~0.32 J/GH |
 | **WindMiners**     | K9           | 10.5 TH/s | 3,300 W | 3.18 GH/W        | 0.314 J/GH |
 
-> ⚠️ Efficiency = Hashrate / Power (e.g. GH/W). Higher is better. J/GH = joules per gigahash (Power / Hashrate in GH/s).
+> **Note:** Efficiency = hashrate ÷ power (for example GH/W). Higher is better. J/GH = joules per gigahash (power ÷ hashrate in GH/s).
 
 ---
 

@@ -5,16 +5,12 @@ nav_exclude: true
 lang: en
 ---
 
-# Zork Network™ Documentation Site
+# Zork Network™ Documentation
 
-@todo a lot yet to do, but throwing this out there for now to start logging 
-some notes and todo items.
+> Explore Your Money.
 
-## 🚧 Warning!
+This site is the technical and educational documentation for the **Zork Network™** (the system) and **Zorkcoin** (the currency, ticker **ZORK**). Content is updated as the project evolves. If something looks out of date, we welcome corrections via GitHub.
 
-This is presently under heavy development!
+## Work in progress
 
-This is currently a **Work-In-Progress** but, while some things might be
-broken, it should be already usable.
-
-We welcome contributions!
+The documentation set is still growing. Core pages should already be useful; newer sections may be expanded over time. Contributions and suggestions are welcome.

@@ -1,4 +1,115 @@
 /*
+ * Zorkcoin brand layer — see .info/zorkcoin_strategy_media_kit.md §4–5.
+ * Overrides ReadTheDocs defaults toward Exo 2 / Inter / JetBrains Mono,
+ * Zork Blue (#00008B), supporting blues, electric cyan, and dark nav layers.
+ */
+
+:root {
+  --zork-blue: #00008B;
+  --zork-bg-base: #0B0F1A;
+  --zork-layer-1: #12172A;
+  --zork-layer-2: #1A2040;
+  --zork-interact: #2F4DFF;
+  --zork-hover: #4C6FFF;
+  --zork-soft: #8FA7FF;
+  --zork-cyan: #00D1FF;
+  --zork-neutral-0: #FFFFFF;
+  --zork-neutral-1: #E6E6E6;
+  --zork-neutral-2: #999999;
+}
+
+html.wy-body-for-nav,
+.wy-body-for-nav,
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.wy-nav-top,
+.rst-content .toctree-wrapper > p.caption,
+.rst-content h1,
+.rst-content h2,
+.rst-content h3,
+.rst-content h4,
+.rst-content h5,
+.rst-content h6,
+.wy-menu-vertical p.caption,
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Exo 2", "Inter", sans-serif;
+}
+
+.wy-nav-top a {
+  font-family: "Exo 2", "Inter", sans-serif;
+}
+
+pre, code, kbd, samp,
+.rst-content tt,
+.rst-content code,
+.hljs,
+.commit code {
+  font-family: "JetBrains Mono", ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
+}
+
+/* Primary nav: media kit dark layers */
+.wy-nav-side {
+  background: var(--zork-layer-1);
+}
+
+.wy-side-nav-search {
+  background-color: var(--zork-bg-base);
+}
+
+/* Current page: RTD uses dark text; force high-contrast on dark blue background */
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.on a {
+  background: var(--zork-layer-2);
+  border-right: 3px solid var(--zork-blue);
+  color: var(--zork-neutral-0) !important;
+}
+
+.wy-menu-vertical li.current > a:hover,
+.wy-menu-vertical li.on a:hover {
+  color: var(--zork-cyan) !important;
+}
+
+.wy-nav-top {
+  background: var(--zork-bg-base);
+}
+
+/* Links in body copy: trust blue anchor from theme; cyan hover; calm visited (no purple) */
+.rst-content a:visited {
+  color: var(--zork-interact);
+}
+
+.rst-content a:hover {
+  color: var(--zork-cyan);
+}
+
+.wy-menu-vertical a:hover {
+  color: var(--zork-cyan);
+}
+
+/* Default nav links (non-current); keep off-white on dark sidebar */
+.wy-menu-vertical a {
+  color: var(--zork-neutral-1);
+}
+
+/* Inline TOC under expanded section: theme may paint these dark */
+.wy-menu-vertical li.toctree-l2.current > a,
+.wy-menu-vertical li.toctree-l3.current > a,
+.wy-menu-vertical li.toctree-l4.current > a {
+  color: var(--zork-neutral-0) !important;
+}
+
+/* Inline code links */
+a:hover code {
+  color: var(--zork-cyan);
+}
+
+a:visited code {
+  color: var(--zork-hover);
+}
+
+/*
  * Wrap inline code samples otherwise they shoot of the side and
  * can't be read at all.
  *

@@ -7,7 +7,7 @@ This document provides a comprehensive technical overview of the **MimbleWimble 
 ## 1. High-Level Overview (User Perspective)
 
 ### 1.1 What is MWEB?
-MWEB, short for **MimbleWimble Extension Block**, is a privacy-focused protocol integrated into the Zorkcoin blockchain. Its name is derived from a "tongue-tying" spell in the Harry Potter series, signifying its ability to obscure transaction details from public view. 
+MWEB, short for **MimbleWimble Extension Block**, is a privacy-focused protocol integrated into the Zorkcoin blockchain. The name reflects the design goal of limiting what observers can infer about transaction amounts and participants on the public ledger. 
 
 Zorkcoin implements this through **Extension Blocks (EB)**, which operate as a parallel sidechain to the main Zorkcoin network. This architecture allows users to "opt-in" to privacy features without disrupting the transparency and security of the primary chain.
 

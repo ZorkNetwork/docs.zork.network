@@ -1,5 +1,9 @@
 # Zork Network™ Documentation Site
 
+> Explore Your Money.
+
+Developer documentation for the **Zork Network™** (system) and **Zorkcoin** (currency, **ZORK**).
+
 ## Development Notes
 
 At the moment there are some notes on the kHeavyHash that are in development
