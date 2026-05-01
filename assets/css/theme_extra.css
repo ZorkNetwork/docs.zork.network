@@ -37,6 +37,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Exo 2", "Inter", sans-serif;
 }
 
+/*
+ * Brand logos in h2 titles — match Cloudinary ASIC pattern (c_limit,w_64). Do not set width/height
+ * here so optional width="64" on legacy <img> tags is honored; max-* caps huge SVG intrinsics.
+ */
+.rst-content h2 img {
+  max-width: 64px;
+  max-height: 64px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 0.35em;
+}
+
 .wy-nav-top a {
   font-family: "Exo 2", "Inter", sans-serif;
 }

@@ -280,98 +280,121 @@ WindMiners once offered kHeavyHash ASICs (e.g. the K9); at the time of writing, 
 
 ---
 
-## kHeavyHash miner comparison summary
+## GPU / CPU Mining
 
-This table lists current known manufacturers and models of ASIC miners built to support the **kHeavyHash** algorithm. It includes specifications such as hashrate, power consumption, and efficiency.
-
-
-| Manufacturer | Model        | Hashrate     | Power     | Efficiency (H/W) | Efficiency (J/GH) |
-|--------------|--------------|--------------|-----------|------------------|-------------------|
-| **Bitmain**  | KS7          | 36–40 TH/s   | 2,772–3,080 W | 13.0 GH/W | 0.077 J/GH |
-|              | KS5 Pro      | 21 TH/s      | 3,150 W   | 6.67 GH/W        | 0.15 J/GH  |
-|              | KS5          | 20 TH/s      | 3,000 W   | 6.67 GH/W        | 0.15 J/GH  |
-|              | KS3          | 8.3–9.4 TH/s | 3,188–3,500 W | 2.60–2.69 GH/W | 0.37–0.38 J/GH |
-| **IceRiver** | KS7          | 30 TH/s      | 3,500 W   | 8.57 GH/W        | 0.12 J/GH  |
-|              | KS7 Lite     | 4.2 TH/s     | 500 W     | 8.40 GH/W        | 0.12 J/GH  |
-|              | KS2 Lite     | 2 TH/s       | 500 W     | 4.00 GH/W        | 0.25 J/GH  |
-|              | KS0 Ultra    | 400 GH/s     | 100 W     | 4.00 GH/W        | 0.25 J/GH  |
-|              | KS5M         | 15 TH/s      | 3,400 W   | ~4.41 GH/W       | ~0.23 J/GH |
-|              | KS5L         | 12 TH/s      | ~2,400 W  | 5.00 GH/W        | 0.20 J/GH  |
-|              | KS3          | 8 TH/s       | 3,200 W   | 2.50 GH/W        | 0.40 J/GH  |
-|              | KS3M         | 6 TH/s       | 3,400 W   | ~1.76 GH/W       | ~0.57 J/GH |
-|              | KS2          | 2 TH/s       | 1,200 W   | ~1.67 GH/W       | 0.60 J/GH  |
-|              | KS1          | 1 TH/s       | 600 W     | ~1.67 GH/W       | 0.60 J/GH  |
-|              | KS0 Pro      | 200 GH/s     | 100 W     | 2.00 GH/W        | 0.50 J/GH  |
-|              | KS0          | 100 GH/s     | 65 W      | ~1.54 GH/W       | ~0.65 J/GH |
-| **Goldshell**| E-KA1M       | 5.5 TH/s     | 1,800 W   | ~3.06 GH/W       | ~0.33 J/GH |
-|              | KA-BOX Pro   | 1.6 TH/s     | 600 W     | ~2.67 GH/W       | 0.38 J/GH  |
-|              | KA BOX       | 1.18 TH/s    | 400 W     | 2.95 GH/W        | 0.34 J/GH  |
-| **DragonBall**| KS6 Pro      | 10.5 TH/s    | 3,600 W   | ~2.92 GH/W       | ~0.34 J/GH |
-|              | KS6          | 10.5–11 TH/s | 3,400–3,600 W | ~3.09 GH/W | ~0.32 J/GH |
-| **iBeLink**  | BM-KS Max    | 10.5 TH/s    | 3,400 W   | ~3.09 GH/W       | ~0.32 J/GH |
-| **WindMiners**     | K9           | 10.5 TH/s | 3,300 W | 3.18 GH/W        | 0.314 J/GH |
-
-> **Note:** Efficiency = hashrate ÷ power (for example GH/W). Higher is better. J/GH = joules per gigahash (power ÷ hashrate in GH/s).
+GPU and CPU mining with BZMiner, GMiner, lolMiner, and similar software predates wide kHeavyHash ASIC availability; figures are historical and vary with drivers, clocks, and power limits. The vendor subsections below mirror the ASIC manufacturer layout—each opens with a short company overview. **Specifications for all legacy GPUs and CPUs are consolidated in the [kHeavyHash Miner Comparison Table](#kheavyhash-miner-comparison-table)** (hashrate and power cells include their units on every row; efficiency is derived from those figures). Primary source for the raw numbers: [Kaspa Wiki hashrate tables](https://wiki.kaspa.org/en/hashrate-tables).
 
 ---
 
-## Legacy GPU/CPU Mining
+### <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/NVIDIA_logo.svg" width="64" alt="" decoding="async" /> Nvidia
 
-GPU and CPU mining with BZMiner / GMiner / lolMiner, etc. Historical data from [Kaspa Wiki hashrate tables](https://wiki.kaspa.org/en/hashrate-tables).
+[Nvidia](https://www.nvidia.com/) is the dominant supplier of discrete **GeForce** and **RTX** gaming GPUs and a major vendor of datacenter accelerators historically sold under the **Tesla** and **Quadro** brands (many workloads now use RTX‑branded professional cards). Like kHeavyHash ASIC houses, Nvidia ships high‑throughput silicon, but unlike Antminer‑class machines its GPUs are general‑purpose: kHeavyHash performance depends on memory bandwidth, core clocks, power limits, and miner tuning rather than a fixed “stock” figure. Community miners have long targeted CUDA‑capable cards first; see the comparison table for GeForce, Tesla, and Quadro entries from Kaspa‑era reporting.
 
-| Vendor | Model | Hashrate (MH/s) | Power (W) | Efficiency (MH/W) |
-|--------|-------|------------------|-----------|-------------------|
-| **Nvidia** | RTX 3090 | 850–1050 | 150–340 | ~3.1–6.0 |
-| | RTX 3080 Ti | 850–1020 | 150–285 | ~3.0–5.5 |
-| | RTX 3080 | 750–852 | 120–200 | ~3.8–6.5 |
-| | RTX 3070 Ti | 520–639 | 100–160 | ~3.3–5.8 |
-| | RTX 3070 | 560–618 | 99–212 | ~2.6–5.6 |
-| | RTX 3060 Ti | 470–515 | 99–175 | ~2.7–5.5 |
-| | RTX 3060 | 360–386 | 65–133 | ~2.7–5.5 |
-| | RTX 3050 | 286–301 | 105–113 | ~2.5–2.8 |
-| | RTX 2080 Ti | 445–795 | 109–250 | ~1.8–4.1 |
-| | RTX 2080 Super | 505–530 | 125–190 | ~2.7–4.2 |
-| | RTX 2080 | 468–570 | 105–180 | ~2.6–4.5 |
-| | RTX 2070 Super | 274–420 | 59–130 | ~2.1–4.6 |
-| | RTX 2070 | 328–400 | 59–130 | ~2.5–5.6 |
-| | RTX 2060 Super | 225–391 | 60–211 | ~1.1–6.5 |
-| | RTX 2060 | 305 | 102 | ~3.0 |
-| | GTX 1660 Ti | 130–325 | 75–107 | ~1.2–4.3 |
-| | GTX 1660 Super | 264–300 | 60–104 | ~2.5–5.0 |
-| | GTX 1660 | 250 | 50 | 5.0 |
-| | GTX 1650 Super | 212 | 69 | ~3.1 |
-| | GTX 1650 / 1650-D6 | 55–140 | 50–70 | ~0.8–2.8 |
-| | GTX 1080 Ti | 520–570 | 174–230 | ~2.3–3.3 |
-| | GTX 1080 | 250–382 | 90–140 | ~1.8–4.2 |
-| | GTX 1070 Ti | 335–340 | 120–130 | ~2.6–2.8 |
-| | GTX 1070 | 240–305 | 60–120 | ~2.0–5.1 |
-| | GTX 1060 6GB | 160–222 | 40–121 | ~1.3–5.6 |
-| | GTX 1060 5GB / 3GB | 170–220 | 75–90 | ~1.9–2.9 |
-| | GTX 1050 Ti | 90–115 | 54–90 | ~1.0–2.1 |
-| | GT 1030 | 45 | 30 | 1.5 |
-| | Tesla V100 | 527 | 212–300 | ~1.8–2.5 |
-| | Quadro A4000 | 557 | 130 | ~4.3 |
-| | Quadro A2000 | 165–313 | 44–69 | ~2.4–7.1 |
-| | Quadro P2000 | 121 | 65 | ~1.9 |
-| **AMD** | RX 6900 XT | 850–1040 | 136–293 | ~2.9–6.3 |
-| | RX 6800 XT | 750–880 | 195–255 | ~2.9–4.5 |
-| | RX 6800 | 700 | 200 | 3.5 |
-| | RX 6700 XT | 360–450 | 150–190 | ~1.9–3.0 |
-| | RX 6600 XT | ~360–380 | ~77–170 | ~2.1–4.9 |
-| | RX 6600 | ~250–325 | ~58–100 | ~2.5–4.3 |
-| | RX 6500 XT | 220 | 90 | ~2.4 |
-| | RX 5700 XT | 135–325 | 50–209 | ~0.6–6.5 |
-| | RX 5700 | 141 | 84 | ~1.7 |
-| | RX 5600 XT | 125–133 | 90 | ~1.4–1.5 |
-| | RX 5500 XT | 169.5 | 40 | ~4.2 |
-| | RX 590 | 190 | 170 | ~1.1 |
-| | RX 580 8GB | 90–111 | 105–110 | ~0.8–1.1 |
-| | RX 570 | 165 | 110 | ~1.5 |
-| | RX 470 | 135 | 80 | ~1.7 |
-| | RX 460/560 | 40 | 45 | ~0.9 |
-| | RADEON VII | 313–436 | 86–170 | ~1.8–5.1 |
-| **Intel** | i5-11500 | 30 | 100 | 0.30 |
-| | i7-8700 | 6.6 | 65 | ~0.10 |
-| **AMD** | Ryzen 9 5950X | 25 | 125 | 0.20 |
-| | Ryzen 9 5900X | 14 | 83 | ~0.17 |
-| **Other** | Raspberry Pi 3 Model B | 1 | 15 | ~0.07 |
+---
+
+### <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/AMD_Logo.svg" width="64" alt="" decoding="async" /> AMD
+
+[AMD](https://www.amd.com/) competes across **Radeon RX** discrete GPUs, **Ryzen** desktop and mobile CPUs, and **EPYC** server processors, any of which can appear in home or farm rigs running OpenCL‑based miners. Like Nvidia’s lineup, Radeon boards are general accelerators rather than kHeavyHash‑only ASICs; unlike Nvidia’s historical CUDA emphasis, AMD’s stack has often leaned on OpenCL and ROCm, so miner support and optimal settings can differ by algorithm build. CPU entries (Ryzen, and EPYC where reported) sit at far lower MH/s than GPUs but illustrate how the same vendor spans silicon classes; the comparison table lists Radeon and Ryzen models from the Kaspa Wiki era.
+
+---
+
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Intel_logo_2023.svg" width="64" alt="" decoding="async" /> Intel
+
+[Intel](https://www.intel.com/) is best known for **Core** desktop and mobile CPUs and **Xeon** server chips; for kHeavyHash‑style mining these parts are usually an afterthought next to discrete GPUs. Like AMD’s Ryzen rows, Intel CPUs offer tiny MH/s per socket; unlike GPU mining, there is little headroom from memory bandwidth tuning—figures are included mainly for completeness from community tables. Arc discrete GPUs are not listed in this legacy extract; verify separately if targeting Intel dGPUs with modern miners. Specifications appear in the comparison table.
+
+---
+
+### <img src="https://cdn.simpleicons.org/arm" width="64" alt="" decoding="async" /> <img src="https://cdn.simpleicons.org/riscv" width="64" alt="" decoding="async" /> Other
+
+**ARM** and **RISC‑V** cover low‑power SBCs, microcontrollers, and experimental boards that occasionally run CPU miners for education or testing—not farm‑scale kHeavyHash. Like WindMiners‑style oddities in the ASIC list, this category is heterogeneous; unlike x86 desktops, software builds must match the ISA and often lack optimized paths. The Raspberry Pi example in the comparison table is representative of **ARM**; add RISC‑V SBCs to the same mental bucket when community builds exist. Treat these entries as curiosity baselines rather than purchase guides.
+
+---
+
+## kHeavyHash Miner Comparison Table
+
+This table lists **kHeavyHash ASIC miners** (TH/s–class) and **legacy GPU/CPU** hardware (MH/s–class) from the sections above. Each row states hashrate, power, and both efficiency columns **with units in the cell** so mixed scales are clear. For legacy rows, **efficiency (H/W)** is MH/W (hashrate in MH/s ÷ power in W); **J/GH** is power in watts ÷ hashrate in GH/s (equivalently 1000 × W ÷ MH/s). Where both hashrate and power are ranges, the efficiency columns span the **best and worst** combinations (maximum hashrate ÷ minimum power for the upper MH/W bound, and the reciprocal logic for J/GH).
+
+
+| Manufacturer   | Model          | Hashrate      | Power      | Efficiency       | Efficiency        |
+| -------------- | -------------- | ------------- | ---------- | ---------------- | ----------------- |
+| **Bitmain**    | KS7            | 36–40 TH/s    | 2.8–3.1 kW | 13.0 GH/W        | 0.077 J/GH        |
+|                | KS5 Pro        | 21 TH/s       | 3.2 kW     | 6.67 GH/W        | 0.15 J/GH         |
+|                | KS5            | 20 TH/s       | 3.0 kW     | 6.67 GH/W        | 0.15 J/GH         |
+|                | KS3            | 8.3–9.4 TH/s  | 3.5 kW     | 2.60 GH/W        | 0.38 J/GH         |
+| **IceRiver**   | KS7            | 30 TH/s       | 3.5 kW     | 8.57 GH/W        | 0.12 J/GH         |
+|                | KS7 Lite       | 4.2 TH/s      | 500 W      | 8.40 GH/W        | 0.12 J/GH         |
+|                | KS2 Lite       | 2 TH/s        | 500 W      | 4.00 GH/W        | 0.25 J/GH         |
+|                | KS0 Ultra      | 400 GH/s      | 100 W      | 4.00 GH/W        | 0.25 J/GH         |
+|                | KS5M           | 15 TH/s       | 3.4 kW     | 4.41 GH/W        | 0.23 J/GH         |
+|                | KS5L           | 12 TH/s       | 2.4 kW     | 5.00 GH/W        | 0.20 J/GH         |
+|                | KS3            | 8 TH/s        | 3.2 kW     | 2.50 GH/W        | 0.40 J/GH         |
+|                | KS3M           | 6 TH/s        | 3.4 kW     | 1.76 GH/W        | 0.57 J/GH         |
+|                | KS2            | 2 TH/s        | 1.2 kW     | 1.67 GH/W        | 0.60 J/GH         |
+|                | KS1            | 1 TH/s        | 600 W      | 1.67 GH/W        | 0.60 J/GH         |
+|                | KS0 Pro        | 200 GH/s      | 100 W      | 2.00 GH/W        | 0.50 J/GH         |
+|                | KS0            | 100 GH/s      | 65 W       | 1.54 GH/W        | 0.65 J/GH         |
+| **Goldshell**  | E-KA1M         | 5.5 TH/s      | 1.8 kW     | 3.06 GH/W        | 0.33 J/GH         |
+|                | KA-BOX Pro     | 1.6 TH/s      | 600 W      | 2.67 GH/W        | 0.38 J/GH         |
+|                | KA BOX         | 1.18 TH/s     | 400 W      | 2.95 GH/W        | 0.34 J/GH         |
+| **DragonBall** | KS6 Pro        | 10.5 TH/s     | 3.6 kW     | 2.92 GH/W        | 0.34 J/GH         |
+|                | KS6            | 10.5–11 TH/s  | 3.4–3.6 kW | 3.09 GH/W        | 0.32 J/GH         |
+| **iBeLink**    | BM-KS Max      | 10.5 TH/s     | 3.4 kW     | 3.09 GH/W        | 0.32 J/GH         |
+| **WindMiners** | K9             | 10.5 TH/s     | 3.3 kW     | 3.18 GH/W        | 0.314 J/GH        |
+| **----------** | **----------** | **---------** | **------** | **------------** | **-------------** |
+| **Nvidia GPU** | RTX 3090       | 850–1050 MH/s | 150–340 W  | 2.5–7 MH/W       | 143–400 J/GH      |
+|                | RTX 3080 Ti    | 850–1020 MH/s | 150–285 W  | 2.98–6.8 MH/W    | 147–335 J/GH      |
+|                | RTX 3080       | 750–852 MH/s  | 120–200 W  | 3.75–7.1 MH/W    | 141–267 J/GH      |
+|                | RTX 3070 Ti    | 520–639 MH/s  | 100–160 W  | 3.25–6.39 MH/W   | 156–308 J/GH      |
+|                | RTX 3070       | 560–618 MH/s  | 99–212 W   | 2.64–6.24 MH/W   | 160–379 J/GH      |
+|                | RTX 3060 Ti    | 470–515 MH/s  | 99–175 W   | 2.69–5.2 MH/W    | 192–372 J/GH      |
+|                | RTX 3060       | 360–386 MH/s  | 65–133 W   | 2.71–5.94 MH/W   | 168–369 J/GH      |
+|                | RTX 3050       | 286–301 MH/s  | 105–113 W  | 2.53–2.87 MH/W   | 349–395 J/GH      |
+|                | RTX 2080 Ti    | 445–795 MH/s  | 109–250 W  | 1.78–7.29 MH/W   | 137–562 J/GH      |
+|                | RTX 2080 Super | 505–530 MH/s  | 125–190 W  | 2.66–4.24 MH/W   | 236–376 J/GH      |
+|                | RTX 2080       | 468–570 MH/s  | 105–180 W  | 2.6–5.43 MH/W    | 184–385 J/GH      |
+|                | RTX 2070 Super | 274–420 MH/s  | 59–130 W   | 2.11–7.12 MH/W   | 140–474 J/GH      |
+|                | RTX 2070       | 328–400 MH/s  | 59–130 W   | 2.52–6.78 MH/W   | 148–396 J/GH      |
+|                | RTX 2060 Super | 225–391 MH/s  | 60–211 W   | 1.07–6.52 MH/W   | 153–938 J/GH      |
+|                | RTX 2060       | 305 MH/s      | 102 W      | 2.99 MH/W        | 334 J/GH          |
+|                | GTX 1660 Ti    | 130–325 MH/s  | 75–107 W   | 1.21–4.33 MH/W   | 231–823 J/GH      |
+|                | GTX 1660 Super | 264–300 MH/s  | 60–104 W   | 2.54–5 MH/W      | 200–394 J/GH      |
+|                | GTX 1660       | 250 MH/s      | 50 W       | 5 MH/W           | 200 J/GH          |
+|                | GTX 1650 Super | 212 MH/s      | 69 W       | 3.07 MH/W        | 325 J/GH          |
+|                | GTX 1650       | 55–140 MH/s   | 50–70 W    | 0.79–2.8 MH/W    | 357–1273 J/GH     |
+|                | GTX 1080 Ti    | 520–570 MH/s  | 174–230 W  | 2.26–3.28 MH/W   | 305–442 J/GH      |
+|                | GTX 1080       | 250–382 MH/s  | 90–140 W   | 1.79–4.24 MH/W   | 236–560 J/GH      |
+|                | GTX 1070 Ti    | 335–340 MH/s  | 120–130 W  | 2.58–2.83 MH/W   | 353–388 J/GH      |
+|                | GTX 1070       | 240–305 MH/s  | 60–120 W   | 2–5.08 MH/W      | 197–500 J/GH      |
+|                | GTX 1060 6GB   | 160–222 MH/s  | 40–121 W   | 1.32–5.55 MH/W   | 180–756 J/GH      |
+|                | GTX 1060 3GB   | 170–220 MH/s  | 75–90 W    | 1.89–2.93 MH/W   | 341–529 J/GH      |
+|                | GTX 1050 Ti    | 90–115 MH/s   | 54–90 W    | 1–2.13 MH/W      | 470–1000 J/GH     |
+|                | GT 1030        | 45 MH/s       | 30 W       | 1.5 MH/W         | 667 J/GH          |
+|                | Tesla V100     | 527 MH/s      | 212–300 W  | 1.76–2.49 MH/W   | 402–569 J/GH      |
+|                | Quadro A4000   | 557 MH/s      | 130 W      | 4.28 MH/W        | 233 J/GH          |
+|                | Quadro A2000   | 165–313 MH/s  | 44–69 W    | 2.39–7.11 MH/W   | 141–418 J/GH      |
+|                | Quadro P2000   | 121 MH/s      | 65 W       | 1.86 MH/W        | 537 J/GH          |
+| **AMD GPU**    | RX 6900 XT     | 850–1040 MH/s | 136–293 W  | 2.9–7.65 MH/W    | 131–345 J/GH      |
+|                | RX 6800 XT     | 750–880 MH/s  | 195–255 W  | 2.94–4.51 MH/W   | 222–340 J/GH      |
+|                | RX 6800        | 700 MH/s      | 200 W      | 3.5 MH/W         | 286 J/GH          |
+|                | RX 6700 XT     | 360–450 MH/s  | 150–190 W  | 1.89–3 MH/W      | 333–528 J/GH      |
+|                | RX 6600 XT     | 360–380 MH/s  | 77–170 W   | 2.12–4.94 MH/W   | 203–472 J/GH      |
+|                | RX 6600        | 250–325 MH/s  | 58–100 W   | 2.5–5.6 MH/W     | 178–400 J/GH      |
+|                | RX 6500 XT     | 220 MH/s      | 90 W       | 2.44 MH/W        | 409 J/GH          |
+|                | RX 5700 XT     | 135–325 MH/s  | 50–209 W   | 0.65–6.5 MH/W    | 154–1548 J/GH     |
+|                | RX 5700        | 141 MH/s      | 84 W       | 1.68 MH/W        | 596 J/GH          |
+|                | RX 5600 XT     | 125–133 MH/s  | 90 W       | 1.39–1.48 MH/W   | 677–720 J/GH      |
+|                | RX 5500 XT     | 169.5 MH/s    | 40 W       | 4.24 MH/W        | 236 J/GH          |
+|                | RX 590         | 190 MH/s      | 170 W      | 1.12 MH/W        | 895 J/GH          |
+|                | RX 580 8GB     | 90–111 MH/s   | 105–110 W  | 0.82–1.06 MH/W   | 946–1222 J/GH     |
+|                | RX 570         | 165 MH/s      | 110 W      | 1.5 MH/W         | 667 J/GH          |
+|                | RX 470         | 135 MH/s      | 80 W       | 1.69 MH/W        | 593 J/GH          |
+|                | RX 460/560     | 40 MH/s       | 45 W       | 0.89 MH/W        | 1125 J/GH         |
+|                | RADEON VII     | 313–436 MH/s  | 86–170 W   | 1.84–5.07 MH/W   | 197–543 J/GH      |
+| **AMD CPU**    | Ryzen 9 5950X  | 25 MH/s       | 125 W      | 0.2 MH/W         | 5000 J/GH         |
+|                | Ryzen 9 5900X  | 14 MH/s       | 83 W       | 0.17 MH/W        | 5929 J/GH         |
+| **Intel CPU**  | i5-11500       | 30 MH/s       | 100 W      | 0.3 MH/W         | 3333 J/GH         |
+|                | i7-8700        | 6.6 MH/s      | 65 W       | 0.10 MH/W        | 9848 J/GH         |
+| **ARM CPU**    | Cortex-A53 x4  | 1 MH/s        | 15 W       | 0.07 MH/W        | 15000 J/GH        |
+
+> **Note:** Efficiency = hashrate ÷ power (for example GH/W). Higher is better. J/GH = joules per 
+gigahash (power ÷ hashrate in GH/s).

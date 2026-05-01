@@ -99,6 +99,7 @@
       SphinxRtdTheme.Navigation.enable({{ site.sticky_navigation | default: 'false' }});
     });
   </script>
+  {%- if page.mathjax %}{% include mathjax.html %}{% endif %}
   <!-- Build Date: {{ site.time | date: "%Y-%m-%d %H:%M" }} -->
 </body>
 </html>
