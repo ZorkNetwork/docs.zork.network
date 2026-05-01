@@ -1,0 +1,71 @@
+{%- comment -%}
+  Open Graph + Twitter Cards. Requires site.url (see _config.yml) for absolute image/page URLs.
+  Optional per page: description, image (path under site, e.g. /assets/img/foo.jpg)
+{%- endcomment -%}
+{%- assign _desc_source = page.description | default: page.excerpt | default: site.description -%}
+{%- assign _desc_plain = _desc_source | markdownify | strip_html | strip | strip_newlines | replace: '  ', ' ' | truncate: 300 -%}
+{%- if page.url == '/' or page.path == 'index.md' -%}
+  {%- assign _og_title = site.title -%}
+{%- elsif page.title -%}
+  {%- assign _og_title = page.title | append: ' | ' | append: site.title -%}
+{%- else -%}
+  {%- assign _og_title = site.title -%}
+{%- endif -%}
+{%- assign _img_rel = page.image | default: site.social.default_image | default: '/assets/img/og-default.jpg' -%}
+{%- assign _img_abs = _img_rel | absolute_url -%}
+{%- assign _page_abs = page.url | absolute_url -%}
+{%- assign og_locale = 'en_US' -%}
+{%- case html_lang -%}
+  {%- when 'es' -%}{%- assign og_locale = 'es_ES' -%}
+  {%- when 'fr' -%}{%- assign og_locale = 'fr_FR' -%}
+  {%- when 'de' -%}{%- assign og_locale = 'de_DE' -%}
+  {%- when 'it' -%}{%- assign og_locale = 'it_IT' -%}
+  {%- when 'pt' -%}{%- assign og_locale = 'pt_BR' -%}
+  {%- when 'ru' -%}{%- assign og_locale = 'ru_RU' -%}
+  {%- when 'zh-Hans' -%}{%- assign og_locale = 'zh_CN' -%}
+  {%- when 'zh-Hant' -%}{%- assign og_locale = 'zh_TW' -%}
+  {%- when 'ja' -%}{%- assign og_locale = 'ja_JP' -%}
+  {%- when 'ko' -%}{%- assign og_locale = 'ko_KR' -%}
+  {%- when 'vi' -%}{%- assign og_locale = 'vi_VN' -%}
+  {%- when 'fil' -%}{%- assign og_locale = 'fil_PH' -%}
+  {%- when 'uk' -%}{%- assign og_locale = 'uk_UA' -%}
+  {%- when 'cs' -%}{%- assign og_locale = 'cs_CZ' -%}
+  {%- when 'hi' -%}{%- assign og_locale = 'hi_IN' -%}
+  {%- when 'ur' -%}{%- assign og_locale = 'ur_PK' -%}
+  {%- when 'id' -%}{%- assign og_locale = 'id_ID' -%}
+  {%- when 'ar' -%}{%- assign og_locale = 'ar_SA' -%}
+  {%- when 'ms' -%}{%- assign og_locale = 'ms_MY' -%}
+  {%- when 'ta' -%}{%- assign og_locale = 'ta_IN' -%}
+  {%- when 'he' -%}{%- assign og_locale = 'he_IL' -%}
+  {%- when 'tr' -%}{%- assign og_locale = 'tr_TR' -%}
+  {%- when 'th' -%}{%- assign og_locale = 'th_TH' -%}
+  {%- when 'fa' -%}{%- assign og_locale = 'fa_IR' -%}
+  {%- when 'bn' -%}{%- assign og_locale = 'bn_BD' -%}
+{%- endcase -%}
+
+  <meta name="description" content="{{ _desc_plain | xml_escape }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+{%- if site.social.twitter_site -%}
+  <meta name="twitter:site" content="{{ site.social.twitter_site | xml_escape }}" />
+{%- endif -%}
+{%- if site.social.twitter_creator -%}
+  <meta name="twitter:creator" content="{{ site.social.twitter_creator | xml_escape }}" />
+{%- endif -%}
+  <meta name="twitter:title" content="{{ _og_title | xml_escape }}" />
+  <meta name="twitter:description" content="{{ _desc_plain | xml_escape }}" />
+  <meta name="twitter:image" content="{{ _img_abs | xml_escape }}" />
+  <meta name="twitter:image:alt" content="{{ site.social.image_alt | default: site.title | xml_escape }}" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ _og_title | xml_escape }}" />
+  <meta property="og:description" content="{{ _desc_plain | xml_escape }}" />
+  <meta property="og:url" content="{{ _page_abs | xml_escape }}" />
+  <meta property="og:site_name" content="{{ site.title | xml_escape }}" />
+  <meta property="og:image" content="{{ _img_abs | xml_escape }}" />
+  {%- if _img_rel contains '.jpg' or _img_rel contains '.jpeg' -%}
+  <meta property="og:image:type" content="image/jpeg" />
+  {%- elsif _img_rel contains '.png' -%}
+  <meta property="og:image:type" content="image/png" />
+  {%- endif -%}
+  <meta property="og:image:alt" content="{{ site.social.image_alt | default: site.title | xml_escape }}" />
+  <meta property="og:locale" content="{{ og_locale }}" />

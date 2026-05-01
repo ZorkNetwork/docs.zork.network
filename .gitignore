@@ -1,6 +1,8 @@
 ###########
 # Project #
 ###########
+# Local Jekyll URL override (see README)
+_config_local.yml
 .vscode/
 .vagrant/
 .sass-cache
