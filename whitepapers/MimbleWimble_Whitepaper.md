@@ -5,11 +5,16 @@ nav_order: 2
 mathjax: true
 ---
 
+> [!NOTE]
+> This page reproduces the original Mimblewimble whitepaper for reading and search on this site. Source: [docs.beam.mw/Mimblewimble.pdf](https://docs.beam.mw/Mimblewimble.pdf).
+>
+> Tom Elvis Jedusor circulated it on 19 July 2016; it describes confidential amounts, cut-through, and a leaner chain state. Zork Network™ implements optional MimbleWimble Extension Blocks (MWEB) for peg-in / peg-out private transfers on Zorkcoin™—see [MimbleWimble Extension Block (MWEB)]({{ '/technical-details/MimbleWimble_Extension_Block.html' | relative_url }}).
+
+---
+
 # Mimblewimble
 
 **Tom Elvis Jedusor** · 19 July, 2016
-
-**Original PDF:** [docs.beam.mw/Mimblewimble.pdf](https://docs.beam.mw/Mimblewimble.pdf)
 
 ---
 
@@ -112,11 +117,11 @@ peer can give gigabytes of data and list the wrong unspent outputs. The user wil
 
 ## References
 
-1. <span id="ref-1"></span>["Confidential Values"](https://people.xiph.org/~greg/confidential_values.txt).
-2. <span id="ref-2"></span>["CoinJoin (BitcoinTalk thread)"](https://bitcointalk.org/index.php?topic=279249.0).
-3. <span id="ref-3"></span>["CryptoNote Whitepaper"](https://cryptonote.org/whitepaper.pdf).
-4. <span id="ref-4"></span>["Ring Confidential Transactions"](https://eprint.iacr.org/2015/1098.pdf).
-5. <span id="ref-5"></span>["One-way Aggregate Signatures (OWAS)"](https://download.wpsoftware.net/bitcoin/wizardry/horasyuanmouton-owas.pdf).
-6. <span id="ref-6"></span>["Enabling Blockchain Innovations with Pegged Sidechains"](http://blockstream.com/sidechains.pdf).
-7. <span id="ref-7"></span>["Mimblewimble Spell (Harry Potter Wiki)"](http://fr.harrypotter.wikia.com/wiki/Sortilège_de_Langue_de_Plomb).
-8. <span id="ref-8"></span>["Transaction Cut-Through (BitcoinTalk thread)"](https://bitcointalk.org/index.php?topic=281848.0).
+1. <span id="ref-1"></span>G. Maxwell, ["Confidential Transactions"](https://people.xiph.org/~greg/confidential_values.txt) ([mirror](https://diyhpl.us/~bryan/papers2/bitcoin/confidential_values.txt)), 2015.
+2. <span id="ref-2"></span>G. Maxwell, ["CoinJoin: Bitcoin privacy for the real world"](https://bitcointalk.org/index.php?topic=279249.0), BitcoinTalk, August 2013.
+3. <span id="ref-3"></span>N. van Saberhagen, ["CryptoNote v 2.0"](https://cryptonote.org/whitepaper.pdf), October 2013.
+4. <span id="ref-4"></span>S. Noether and A. Mackenzie, ["Ring Confidential Transactions"](https://eprint.iacr.org/2015/1098.pdf) ([Ledger](https://doi.org/10.5195/ledger.2016.34)), IACR Cryptology ePrint Archive, Report 2015/1098, 2015.
+5. <span id="ref-5"></span>G. Maxwell (as Y. Horas Mouton), ["One-way Aggregate Signatures (OWAS)"](https://download.wpsoftware.net/bitcoin/wizardry/horasyuanmouton-owas.pdf), in *Increasing Anonymity in Bitcoin*, 2015.
+6. <span id="ref-6"></span>A. Back, M. Corallo, L. Dashjr, M. Friedenbach, G. Maxwell, A. Miller, A. Poelstra, J. Timón, and P. Wuille, ["Enabling Blockchain Innovations with Pegged Sidechains"](https://blockstream.com/sidechains.pdf), October 2014.
+7. <span id="ref-7"></span>["Langue de Plomb (Muffling Spell)"](https://harrypotter.fandom.com/fr/wiki/Sortil%C3%A8ge_de_Langue_de_Plomb) ([original wiki](http://fr.harrypotter.wikia.com/wiki/Sortil%C3%A8ge_de_Langue_de_Plomb)), Harry Potter Wiki (Fandom).
+8. <span id="ref-8"></span>G. Maxwell, ["Transaction cut-through"](https://bitcointalk.org/index.php?topic=281848.0), BitcoinTalk, August 2013.

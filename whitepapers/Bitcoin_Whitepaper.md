@@ -5,11 +5,16 @@ nav_order: 1
 mathjax: true
 ---
 
+> [!NOTE]
+> This page is a Markdown reproduction of the original whitepaper so you can read and search it within the Zork Network™ documentation site. Source: [bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf).
+>
+> Satoshi Nakamoto published *Bitcoin: A Peer-to-Peer Electronic Cash System* in October 2008, outlining peer-to-peer electronic cash and proof-of-work consensus. Zorkcoin™ on Zork Network™ inherits that Bitcoin-family model at a high level—UTXO transfers, block validation, transparent-chain tooling—through a Litecoin-family codebase; consensus is Zork-specific (kHeavyHash, Zorkcoin™ header rules). The paper is background for why those ideas appear in the stack, not a specification of Zorkcoin™.
+
+---
+
 # Bitcoin: A Peer-to-Peer Electronic Cash System
 
 **Satoshi Nakamoto** · satoshin@gmx.com · www.bitcoin.org
-
-**Original PDF:** [bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf)
 
 ---
 

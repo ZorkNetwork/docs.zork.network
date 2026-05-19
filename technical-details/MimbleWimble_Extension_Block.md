@@ -1,4 +1,14 @@
-# Technical Documentation: MimbleWimble Extension Block (MWEB) in Zorkcoin
+---
+layout: default
+title: MimbleWimble Extension Block
+nav_order: 3
+published: false
+nav_exclude: true
+search_exclude: true
+hide: true
+---
+
+# MimbleWimble Extension Block
 
 This document provides a comprehensive technical overview of the **MimbleWimble Extension Block (MWEB)** feature as implemented in **Zorkcoin** (via its parent fork, Litecoin). It is designed to serve as a singular reference for users, developers, and blockchain experts.
 

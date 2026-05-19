@@ -134,6 +134,14 @@ defaults:
       path: "bn"
     values:
       lang: "bn"
+  # Contribution guides — draft until published (remove this block or set published: true)
+  - scope:
+      path: "contribution"
+    values:
+      published: false
+      nav_exclude: true
+      search_exclude: true
+      hide: true
 
 #exclude:
 #  - assets/
